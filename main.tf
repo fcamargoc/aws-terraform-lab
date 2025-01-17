@@ -4,7 +4,7 @@ provider "aws" {
 }
 resource "aws_instance" "example" {
   ami           = "ami-0df8c184d5f6ae949" # Amazon Linux 2 AMI
-  instance_type = "t2.small"
+  instance_type = "t2.micro"
   tags = {
     Name = "Terraform-Example"
   }
