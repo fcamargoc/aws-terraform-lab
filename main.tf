@@ -8,4 +8,8 @@ resource "aws_instance" "example" {
   tags = {
     Name = "Terraform-Example"
   }
+   metadata_options {
+     http_tokens = "required"
+   }
+
 }
