@@ -55,5 +55,5 @@ resource "aws_s3_bucket" "insecure_bucket" {
 
 resource "aws_s3_bucket_acl" "insecure_acl" {
   bucket = aws_s3_bucket.insecure_bucket.id
-  acl    = "public-read"  # CRITICO: bucket público
+  acl    = "public-read"  
 }
